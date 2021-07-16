@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="The Avannis home page" timestamp="2021-07-15T17:15:28" time="4.65" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="The Avannis home page"/>
+      <property name="capabilities" value="internetexplorer.11.windows"/>
+      <property name="file" value=".\test\specs\test_a.js"/>
+    </properties>
+    <testcase classname="internetexplorer.11.windows.The Avannis home page" name="should have the logo link and the menu heading" time="4.65">
+      <system-out><![CDATA[
+COMMAND: POST /session/8d2570f4-a28d-4873-9083-87acd6351d05/url - {"url":"http://avannis.com/"}
+RESULT: {"url":"http://avannis.com/"}
+COMMAND: POST /session/8d2570f4-a28d-4873-9083-87acd6351d05/element - {"using":"css selector","value":".fusion-logo-link"}
+RESULT: {"using":"css selector","value":".fusion-logo-link"}
+COMMAND: GET /session/8d2570f4-a28d-4873-9083-87acd6351d05/element/1bc16cfa-cc85-4dc8-9aea-8f027593558c/attribute/href - {}
+RESULT: {}
+COMMAND: POST /session/8d2570f4-a28d-4873-9083-87acd6351d05/elements - {"using":"css selector","value":".menu-text"}
+RESULT: {"using":"css selector","value":".menu-text"}
+COMMAND: GET /session/8d2570f4-a28d-4873-9083-87acd6351d05/element/1ad3756f-5ad2-49c7-be82-b76a2c7ec2b7/text - {}
+RESULT: {}
+COMMAND: DELETE /session/8d2570f4-a28d-4873-9083-87acd6351d05 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
